@@ -1,4 +1,4 @@
-# BPC
+# BPC（Bike Parking Collection）
 非机动车停车收费系统
 
 1.用户信息管理（添加新用户，查询用户信息）
