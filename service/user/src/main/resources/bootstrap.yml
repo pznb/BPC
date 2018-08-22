@@ -1,0 +1,21 @@
+server:
+  port: 8081
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:8761/eureka/
+  instance:
+      prefer-ip-address: true
+      instance-id: ${spring.application.name}:${spring.cloud.client.ipAddress}:${server.port}
+
+spring:
+  application:
+    name: org-pznb-user
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: org-pznb-config
+      name: color,druid,mybatis
+      profile: dev
