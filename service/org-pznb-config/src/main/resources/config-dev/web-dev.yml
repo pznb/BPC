@@ -1,0 +1,14 @@
+#设置超时时间，重试机制
+ribbon:
+  ReadTimeout: 60000
+  ConnectTimeout: 60000
+  MaxAutoRetries: 0
+  #当前service_id请示失败，换一个同样的service_id重试请求。这里关闭
+  MaxAutoRetriesNextServer: 0
+  OkToRetryOnAllOperations: false
+#设置服务默认熔断时间
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 8000
+#关闭ribbon重试机制
+spring.cloud.loadbalancer.retry.enabled: false
+endpoints.health.sensitive: false
+management.security.enabled: false

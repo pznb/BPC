@@ -7,3 +7,13 @@ service/eureka/eureka.iml
 service/config/target/
 service/config/.idea/
 service/config/config.iml
+service/org-pznb-eureka/target/
+service/org-pznb-eureka/.idea/
+service/org-pznb-eureka/eureka.iml
+service/org-pznb-config/target/
+service/org-pznb-config/.idea/
+service/org-pznb-config/config.iml
+service/org-pznb-account/target/
+service/org-pznb-account/.idea/
+service/org-pznb-account/user.iml
+service/.idea/
