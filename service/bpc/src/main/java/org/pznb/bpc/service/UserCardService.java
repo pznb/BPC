@@ -7,6 +7,6 @@ package org.pznb.bpc.service;
  * @author PJJ
  * @since 2018/08/26
  */
-public interface UserCardService {
+public class UserCardService {
 
 }

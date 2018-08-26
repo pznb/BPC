@@ -1,5 +1,7 @@
 package org.pznb.bpc.entity;
 
+import org.pznb.bpc.base.BaseEntity;
+
 import java.math.BigDecimal;
 import java.util.Date;
 
@@ -9,7 +11,9 @@ import java.util.Date;
  * @author PJJ
  * @since 2018/08/26
  */
-public class WithdrewBill {
+public class WithdrewBill extends BaseEntity {
+    private static final long serialVersionUID = -8935417709346082888L;
+
     /**网点提现账单记录*/
     private String siteBillNo;
     

@@ -1,5 +1,7 @@
 package org.pznb.bpc.entity;
 
+import org.pznb.bpc.base.BaseEntity;
+
 import java.math.BigDecimal;
 import java.util.Date;
 
@@ -9,7 +11,9 @@ import java.util.Date;
  * @author PJJ
  * @since 2018/08/26
  */
-public class Card {
+public class Card extends BaseEntity {
+    private static final long serialVersionUID = -1683722852502696051L;
+
     /**卡号*/
     private String bpcCardNo;
     /**卡类型 1、储值卡*/

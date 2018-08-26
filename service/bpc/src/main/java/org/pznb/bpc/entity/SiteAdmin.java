@@ -1,5 +1,7 @@
 package org.pznb.bpc.entity;
 
+import org.pznb.bpc.base.BaseEntity;
+
 import java.util.Date;
 
 /**
@@ -8,7 +10,9 @@ import java.util.Date;
  * @author PJJ
  * @since 2018/08/26
  */
-public class SiteAdmin {
+public class SiteAdmin extends BaseEntity {
+    private static final long serialVersionUID = -6914383262683588862L;
+
     /**管理员编号*/
     private String adminNo;
     /**管理员所在网点*/

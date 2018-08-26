@@ -1,5 +1,7 @@
 package org.pznb.bpc.entity;
 
+import org.pznb.bpc.base.BaseEntity;
+
 import java.util.Date;
 
 /**
@@ -8,7 +10,9 @@ import java.util.Date;
  * @author PJJ
  * @since 2018/08/26
  */
-public class User {
+public class User extends BaseEntity {
+    private static final long serialVersionUID = 701638677479955536L;
+
     /**用户名*/
     private String username;
     /**用户密码*/

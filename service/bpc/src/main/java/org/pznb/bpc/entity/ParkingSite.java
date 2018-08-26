@@ -1,5 +1,7 @@
 package org.pznb.bpc.entity;
 
+import org.pznb.bpc.base.BaseEntity;
+
 import java.util.Date;
 
 /**
@@ -8,7 +10,9 @@ import java.util.Date;
  * @author PJJ
  * @since 2018/08/26
  */
-public class ParkingSite {
+public class ParkingSite extends BaseEntity {
+    private static final long serialVersionUID = -3936134848444938092L;
+
     /**停车场网点编号*/
     private String siteNo;
     /**省*/

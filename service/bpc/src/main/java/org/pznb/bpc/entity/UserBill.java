@@ -1,5 +1,7 @@
 package org.pznb.bpc.entity;
 
+import org.pznb.bpc.base.BaseEntity;
+
 import java.math.BigDecimal;
 import java.util.Date;
 
@@ -9,7 +11,9 @@ import java.util.Date;
  * @author PJJ
  * @since 2018/08/26
  */
-public class UserBill {
+public class UserBill extends BaseEntity {
+    private static final long serialVersionUID = -6698074656004288616L;
+
     /**帐单号*/
     private String billNo;
     /**消费者手机号*/

@@ -49,3 +49,5 @@ mybatis:
     lazy-load-trigger-methods: equals,clone,hashCode,toString
   mapper-locations: classpath:mybatis/*.xml
   type-aliases-package:
+
+
