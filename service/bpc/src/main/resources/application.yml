@@ -12,26 +12,19 @@ spring:
     url: jdbc:mysql://localhost:3306/springboot?characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai
     username: root
     password: 123456
-    # 初始化大小，最小，最大
     initialSize: 5
     minIdle: 5
     maxActive: 20
-    # 配置获取连接等待超时的时间(毫秒)
     maxWait: 60000
-    # 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒
     timeBetweenEvictionRunsMillis: 60000
-    # 配置有一个连接在连接池中的最小生存时间，单位是毫秒
     minEvictableIdleTimeMillis: 300000
     validationQuery: SELECT 1 FROM DUAL
     testWhileIdle: true
     testOnBorrow: false
     testOnReturn: false
-    # 打开PSCache，指定每个连接上PSCache的大小
     poolPreparedStatements: true
     maxPoolPreparedStatementPerConnectionSize: 20
-    # 配置监控统计拦截的filters，去掉后监控界面sql将无法统计，'wall'用于防火墙
     filters: stat, wall, log4j
-    # 通过connectProperties属性来打开mergeSql功能，慢SQL记录
     connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
     loginUsername: druid
     loginPassword: druid
@@ -40,25 +33,18 @@ spring:
 
 mybatis:
   configuration:
-    #开启缓存
     cache-enabled: true
-    #延迟加载
     lazy-loading-enabled: true
     aggressive-lazy-loading: false
-    #一个查询返回多个结果集
     multiple-result-sets-enabled: true
     use-column-label: true
     use-generated-keys: false
     default-executor-type: simple
-    #超时秒数
     default-statement-timeout: 10
-    #允许嵌套语句中分页
     safe-row-bounds-enabled: false
     safe-result-handler-enabled: false
-    #关闭驼峰命令 a_name隐射到aName
     map-underscore-to-camel-case: false
     local-cache-scope: session
-    #insert null时不需要jdbcType默认为下面
     jdbc-type-for-null: null
     lazy-load-trigger-methods: equals,clone,hashCode,toString
   mapper-locations: classpath:mybatis/*.xml
