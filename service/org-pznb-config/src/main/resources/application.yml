@@ -1,0 +1,25 @@
+server:
+  port: 8040
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:8761/eureka/
+  instance:
+      prefer-ip-address: true
+      #ip:port or name
+      instance-id: ${spring.application.name}:${spring.cloud.client.ipAddress}:${server.port}
+
+spring:
+  application:
+    name: org-pznb-config
+  #git svn native or other that can be attached
+  profiles:
+    active:
+     - native
+  cloud:
+    config:
+      enabled: true
+      server:
+        native:
+          search-locations: classpath:/config-dev,classpath:/config-pro
