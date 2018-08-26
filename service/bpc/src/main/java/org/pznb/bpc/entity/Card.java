@@ -1,5 +1,6 @@
 package org.pznb.bpc.entity;
 
+import lombok.Data;
 import org.pznb.bpc.base.BaseEntity;
 
 import java.math.BigDecimal;
@@ -11,6 +12,7 @@ import java.util.Date;
  * @author PJJ
  * @since 2018/08/26
  */
+@Data
 public class Card extends BaseEntity {
     private static final long serialVersionUID = -1683722852502696051L;
 
@@ -42,118 +44,4 @@ public class Card extends BaseEntity {
     private String spare2;
     
     private String spare3;
-
-
-    public String getBpcCardNo() {
-        return bpcCardNo;
-    }
-
-    public void setBpcCardNo(String bpcCardNo) {
-        this.bpcCardNo = bpcCardNo;
-    }
-
-    public Integer getCardType() {
-        return cardType;
-    }
-
-    public void setCardType(Integer cardType) {
-        this.cardType = cardType;
-    }
-
-    public Integer getCardStatus() {
-        return cardStatus;
-    }
-
-    public void setCardStatus(Integer cardStatus) {
-        this.cardStatus = cardStatus;
-    }
-
-    public BigDecimal getCost() {
-        return cost;
-    }
-
-    public void setCost(BigDecimal cost) {
-        this.cost = cost;
-    }
-
-    public String getProducer() {
-        return producer;
-    }
-
-    public void setProducer(String producer) {
-        this.producer = producer;
-    }
-
-    public Integer getAssignStatus() {
-        return assignStatus;
-    }
-
-    public void setAssignStatus(Integer assignStatus) {
-        this.assignStatus = assignStatus;
-    }
-
-    public String getAssigNo() {
-        return assigNo;
-    }
-
-    public void setAssigNo(String assigNo) {
-        this.assigNo = assigNo;
-    }
-
-    public Date getSaleTime() {
-        return saleTime;
-    }
-
-    public void setSaleTime(Date saleTime) {
-        this.saleTime = saleTime;
-    }
-
-    public Integer getSaleStatus() {
-        return saleStatus;
-    }
-
-    public void setSaleStatus(Integer saleStatus) {
-        this.saleStatus = saleStatus;
-    }
-
-    public String getSaleNo() {
-        return saleNo;
-    }
-
-    public void setSaleNo(String saleNo) {
-        this.saleNo = saleNo;
-    }
-
-    public String getPhoneNo() {
-        return phoneNo;
-    }
-
-    public void setPhoneNo(String phoneNo) {
-        this.phoneNo = phoneNo;
-    }
-
-    public String getSpare1() {
-        return spare1;
-    }
-
-    public void setSpare1(String spare1) {
-        this.spare1 = spare1;
-    }
-
-    public String getSpare2() {
-        return spare2;
-    }
-
-    public void setSpare2(String spare2) {
-        this.spare2 = spare2;
-    }
-
-    public String getSpare3() {
-        return spare3;
-    }
-
-    public void setSpare3(String spare3) {
-        this.spare3 = spare3;
-    }
-
 }

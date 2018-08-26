@@ -1,5 +1,6 @@
 package org.pznb.bpc.entity;
 
+import lombok.Data;
 import org.pznb.bpc.base.BaseEntity;
 
 import java.math.BigDecimal;
@@ -11,6 +12,7 @@ import java.util.Date;
  * @author PJJ
  * @since 2018/08/26
  */
+@Data
 public class UserBill extends BaseEntity {
     private static final long serialVersionUID = -6698074656004288616L;
 
@@ -40,110 +42,4 @@ public class UserBill extends BaseEntity {
     private String spare2;
     
     private String spare3;
-
-
-    public String getBillNo() {
-        return billNo;
-    }
-
-    public void setBillNo(String billNo) {
-        this.billNo = billNo;
-    }
-
-    public String getPhoneNo() {
-        return phoneNo;
-    }
-
-    public void setPhoneNo(String phoneNo) {
-        this.phoneNo = phoneNo;
-    }
-
-    public String getBpcNo() {
-        return bpcNo;
-    }
-
-    public void setBpcNo(String bpcNo) {
-        this.bpcNo = bpcNo;
-    }
-
-    public String getSiteNo() {
-        return siteNo;
-    }
-
-    public void setSiteNo(String siteNo) {
-        this.siteNo = siteNo;
-    }
-
-    public BigDecimal getBpcBalance() {
-        return bpcBalance;
-    }
-
-    public void setBpcBalance(BigDecimal bpcBalance) {
-        this.bpcBalance = bpcBalance;
-    }
-
-    public BigDecimal getConsumeBalance() {
-        return consumeBalance;
-    }
-
-    public void setConsumeBalance(BigDecimal consumeBalance) {
-        this.consumeBalance = consumeBalance;
-    }
-
-    public BigDecimal getFactBalance() {
-        return factBalance;
-    }
-
-    public void setFactBalance(BigDecimal factBalance) {
-        this.factBalance = factBalance;
-    }
-
-    public Date getConsumeTime() {
-        return consumeTime;
-    }
-
-    public void setConsumeTime(Date consumeTime) {
-        this.consumeTime = consumeTime;
-    }
-
-    public Integer getOperation() {
-        return operation;
-    }
-
-    public void setOperation(Integer operation) {
-        this.operation = operation;
-    }
-
-    public Integer getStatus() {
-        return status;
-    }
-
-    public void setStatus(Integer status) {
-        this.status = status;
-    }
-
-    public String getSpare1() {
-        return spare1;
-    }
-
-    public void setSpare1(String spare1) {
-        this.spare1 = spare1;
-    }
-
-    public String getSpare2() {
-        return spare2;
-    }
-
-    public void setSpare2(String spare2) {
-        this.spare2 = spare2;
-    }
-
-    public String getSpare3() {
-        return spare3;
-    }
-
-    public void setSpare3(String spare3) {
-        this.spare3 = spare3;
-    }
-
 }

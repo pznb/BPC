@@ -1,5 +1,6 @@
 package org.pznb.bpc.entity;
 
+import lombok.Data;
 import org.pznb.bpc.base.BaseEntity;
 
 import java.math.BigDecimal;
@@ -11,6 +12,7 @@ import java.util.Date;
  * @author PJJ
  * @since 2018/08/26
  */
+@Data
 public class WithdrewBill extends BaseEntity {
     private static final long serialVersionUID = -8935417709346082888L;
 
@@ -34,86 +36,4 @@ public class WithdrewBill extends BaseEntity {
     private String spare2;
     
     private String spare3;
-
-
-    public String getSiteBillNo() {
-        return siteBillNo;
-    }
-
-    public void setSiteBillNo(String siteBillNo) {
-        this.siteBillNo = siteBillNo;
-    }
-
-    public String getSiteNo() {
-        return siteNo;
-    }
-
-    public void setSiteNo(String siteNo) {
-        this.siteNo = siteNo;
-    }
-
-    public String getAdminNo() {
-        return adminNo;
-    }
-
-    public void setAdminNo(String adminNo) {
-        this.adminNo = adminNo;
-    }
-
-    public Date getWithdrewTime() {
-        return withdrewTime;
-    }
-
-    public void setWithdrewTime(Date withdrewTime) {
-        this.withdrewTime = withdrewTime;
-    }
-
-    public BigDecimal getWithdrewBalance() {
-        return withdrewBalance;
-    }
-
-    public void setWithdrewBalance(BigDecimal withdrewBalance) {
-        this.withdrewBalance = withdrewBalance;
-    }
-
-    public Object getWithdrewNum() {
-        return withdrewNum;
-    }
-
-    public void setWithdrewNum(Object withdrewNum) {
-        this.withdrewNum = withdrewNum;
-    }
-
-    public Integer getStatus() {
-        return status;
-    }
-
-    public void setStatus(Integer status) {
-        this.status = status;
-    }
-
-    public String getSpare1() {
-        return spare1;
-    }
-
-    public void setSpare1(String spare1) {
-        this.spare1 = spare1;
-    }
-
-    public String getSpare2() {
-        return spare2;
-    }
-
-    public void setSpare2(String spare2) {
-        this.spare2 = spare2;
-    }
-
-    public String getSpare3() {
-        return spare3;
-    }
-
-    public void setSpare3(String spare3) {
-        this.spare3 = spare3;
-    }
-
 }
