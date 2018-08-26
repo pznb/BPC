@@ -2,3 +2,6 @@ service/.idea/
 service/org-pznb-bpc/target/
 service/org-pznb-bpc/.idea/
 service/org-pznb-bpc/bpc.iml
+service/bpc/.mvn/
+service/bpc/mvnw
+service/bpc/mvnw.cmd
