@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Configuration status="WARN" monitorInterval="600">
+
+    <Properties>
+        <Property name="LOG_HOME">c:/logs</Property>
+    </Properties>
+
+    <Appenders>
+        <Console name="console_out_appender" target="SYSTEM_OUT">
+            <ThresholdFilter level="DEBUG" onMatch="ACCEPT"
+                             onMismatch="DENY" />
+            <PatternLayout pattern="%5p [%t] %d{yyyy-MM-dd HH:mm:ss} (%F:%L) %m%n" />
+        </Console>
+        <Console name="console_err_appender" target="SYSTEM_ERR">
+            <ThresholdFilter level="ERROR" onMatch="ACCEPT"
+                             onMismatch="DENY" />
+            <PatternLayout pattern="%5p [%t] %d{yyyy-MM-dd HH:mm:ss} (%F:%L) %m%n" />
+        </Console>
+
+        <RollingFile name="roll_appender" immediateFlush="true"
+                     fileName="${LOG_HOME}/app.log" filePattern="${LOG_HOME}/app/app - %d{yyyy-MM-dd HH_mm_ss}.log.gz">
+            <PatternLayout>
+                <pattern>%5p [%t] %d{yyyy-MM-dd HH:mm:ss} (%F:%L) %m%n</pattern>
+            </PatternLayout>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="10MB" />
+            </Policies>
+        </RollingFile>
+    </Appenders>
+
+    <Loggers>
+        <!-- 配置日志的根节点 -->
+        <!-- 定义logger，只有定义了logger并引入了appender，appender才会生效 -->
+        <root level="info">
+            <appender-ref ref="console_out_appender" />
+            <appender-ref ref="console_err_appender" />
+            <appender-ref ref="roll_appender" />
+        </root>
+
+    </Loggers>
+
+</Configuration>
