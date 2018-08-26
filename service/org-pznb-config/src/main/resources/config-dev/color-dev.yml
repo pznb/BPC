@@ -1,5 +1,0 @@
-#console color
-spring:
-  output:
-   ansi:
-     enabled: always
