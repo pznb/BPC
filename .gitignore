@@ -17,3 +17,8 @@ service/org-pznb-account/target/
 service/org-pznb-account/.idea/
 service/org-pznb-account/user.iml
 service/.idea/
+service/org-pznb-bpc/target/
+service/org-pznb-bpc/.idea/
+service/org-pznb-bpc/src/main/java/org/pznb/bpc/ConfigApplication.java
+service/org-pznb-bpc/src/main/resources/application.yml
+service/org-pznb-bpc/bpc.iml
